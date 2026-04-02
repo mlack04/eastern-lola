@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Für dich</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #fff8f0;
+      padding: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+
+    input {
+      padding: 12px;
+      font-size: 16px;
+      width: 80%;
+      max-width: 250px;
+      margin-top: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 8px;
+      background-color: #f4c542;
+      cursor: pointer;
+    }
+
+    #content {
+      display: none;
+      max-width: 500px;
+      margin: 40px auto 0;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>🔐 Passwort eingeben</h2>
+<input type="password" id="pw" placeholder="Passwort">
+<br>
+<button onclick="check()">OK</button>
+
+<div id="content">
+  <h2>🐣</h2>
+  <p>
+    Hey Mausi, <br><br>
+    Wollte nichts auf die Karte schreiben, was vielleicht wer anders auch lesen könnte 🙂<br><br>
+    Aber durch mein super Informatiker-Können geht das ein bisschen geheimer. <br><br>
+    Auf jeden Fall wollte ich nocheinmal sagen, wie sehr ich die gemeinsame Zeit mit dir genieße. 
+    Du zauberst mir so oft ein Lächeln ins Gesicht, auch wenn du garnicht da bist und ich nur an dich denke.
+    Du hast in den letzten Monaten in vielen verschiedenen Richtungen mein Leben besser gemacht, aber vor allem mich als Mensch.
+    Bin wirklich dankbar, dich zu haben und ich freue mich schon auf die unzähligen gemeinsamen Stunden, die wir noch verbringen werden!<br><br>
+    Hab dich lieb und nochmal Frohe Ostern 🐰<br><br>
+    PS: Die Frage, ob du Rosinen magst, war wegen dem Reindling, hehe<br><br>
+  </p>
+</div>
+
+<script>
+function check() {
+  var pw = document.getElementById("pw").value;
+  if (pw === "20.08.2025") {
+    document.getElementById("content").style.display = "block";
+  } else {
+    alert("Falsches Passwort 🙂");
+  }
+}
+</script>
+
+</body>
+</html>
